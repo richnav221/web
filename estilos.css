@@ -1,0 +1,32 @@
+body { background-color: black; color:#d4a537; font-family:Georgia, 'Times New Roman', Times, serif}
+.ficha {background-color: #5b5a5985; padding:20px; border-radius: 20px; color:rgb(177, 0, 216);width: 300px}
+.nombre {color:#000000; font-size:30px; font-weight: bold}
+.clase {color:rgb(209, 0, 0)}
+.stats {list-style:none; padding:10px; display: flex; gap:20px; justify-content: flex-start; align-items: center}
+.vida {color:rgb(209, 0, 0); font-weight:bold}
+a {color:#f9f9f9; text-decoration:none}
+a:hover{color:blue}
+[data-tipo="heroe"]{border: 10px solid rgba(28, 45, 227, 0.511)}
+[data-tipo="villano"]{border: 10px solid rgba(227, 28, 28, 0.511)}
+#titulo{border-bottom:3px solid rgb(209, 0, 0)}
+.redes-pagina p{font-style:italic}
+ /* "El combinador descendiente (espacio) no le importa cuántos niveles hay en el medio — siempre encuentra <p> dentro del contenedor" */
+ .redes-pagina > p {
+background-color: #2a2a2a;
+padding: 8px 12px;
+border-radius: 6px;}
+/* "El combinador hijo directo (>) solo aplica cuando el elemento objetivo es hijo inmediato. Si hay otro contenedor en el medio, no funciona." */
+h3 + p {
+margin-top: 16px;
+border-top: 2px solid #d4a537;
+padding-top: 12px;
+}
+/* "El combinador hermano adyacente (+) solo aplica cuando dos elementos están al mismo nivel y pegados, sin nada entre ellos. Si mueves algo, deja de funcionar." */
+h3 ~ p {
+color: #d4a537;
+font-weight: bold;
+}/* "El combinador hermano general (~) aplica a todos los elementos del tipo especificado que vengan después, al mismo nivel, sin importar si están pegados o no. Es como +, pero más permisivo." */
+.resaltado {border: 10px solid rgba(13, 253, 0, 0.76)}
+.fichas {display: flex;gap: 20px;flex-wrap: wrap;}
+.ficha img { width: 100%;height: auto;display: block;}
+.borde-redondeado {border-radius: 12px}
